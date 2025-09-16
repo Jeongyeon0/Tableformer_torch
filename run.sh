@@ -1,0 +1,1 @@
+CUDA_DEVICES=0 python3 trainer_table.py --batch_size 16 --tsv_path "" --dev_path "" --test_path "" --table_csv_path "" --dev_result_path "" --test_result_path "" --checkpoints "" --model_name "tableformer"
