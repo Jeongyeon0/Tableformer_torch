@@ -12,7 +12,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""PyTorch TAPAS model. """
+"""PyTorch TAPAS and TABLEFORMER model. """
+# This file should be used after overwriting the files in the tapas folder of huggingface.
 
 
 import enum
@@ -2364,5 +2365,6 @@ def _calculate_regression_loss(
     per_example_answer_loss_scaled = config.answer_loss_importance * (per_example_answer_loss * aggregate_mask)
 
     return per_example_answer_loss_scaled, large_answer_loss_mask
+
 
 
